@@ -11,3 +11,7 @@ diction = {
       "US" : {"city" : "tallahasse"}
     }
 }
+
+# Tuples
+
+tupleExample = (33333, 44444)

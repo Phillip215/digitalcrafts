@@ -1,0 +1,114 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  background-color: lavender;
+}
+
+.con {
+  display: grid;
+  height: 60vh;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: 120px 120px;
+  grid-template-areas: "one two three" "four five six";
+  grid-gap: 5px;
+}
+
+.one {
+  grid-area: one;
+  background-color: blue;
+}
+
+.two {
+  grid-area: two;
+  background-color: springgreen;
+}
+
+.three {
+  grid-area: three;
+  background-color: thistle;
+}
+
+.four {
+  grid-area: four;
+  background-color: olive;
+}
+
+.five {
+  grid-area: five;
+  background-color: peachpuff;
+}
+
+.six {
+  grid-area: six;
+  background-color: rebeccapurple;
+}
+
+/* Assign two */
+.tain {
+  display: grid;
+  height: 60vh;
+  grid-template-columns: 40px 40px 40px 40px 40px;
+  grid-template-rows: 50px 50px;
+  grid-template-areas:
+    "t p a b z"
+    "x y v d g";
+}
+
+.t {
+  grid-area: t;
+  background-color: darkgoldenrod;
+}
+.p {
+  grid-area: p;
+  background-color: indigo;
+}
+
+.a {
+  grid-area: a;
+  background-color: ivory;
+}
+
+.b {
+  grid-area: b;
+  background-color: palevioletred;
+}
+
+.z {
+  grid-area: z;
+  background-color: wheat;
+}
+
+.x {
+  grid-area: x;
+  background-color: yellowgreen;
+}
+
+.y {
+  grid-area: y;
+  background-color: aqua;
+}
+
+.v {
+  grid-area: v;
+  background-color: bisque;
+}
+
+.d {
+  grid-area: d;
+  background-color: azure;
+}
+
+.g {
+  grid-area: g;
+  background-color: khaki;
+}

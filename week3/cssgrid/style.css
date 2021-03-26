@@ -1,0 +1,63 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Train One", cursive;
+  background-color: aliceblue;
+}
+
+.con {
+  display: grid;
+  height: 100vh;
+  padding-left: 10px;
+  grid-template-columns: 20vw 35vw 35vw;
+  grid-template-rows: 10vh 35vh 35vh 15vh;
+  grid-template-areas:
+    "sidebar nav nav"
+    "sidebar main content1"
+    "sidebar content2 content3"
+    "footer footer footer";
+}
+
+nav {
+  grid-area: nav;
+  background-color: blanchedalmond;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: burlywood;
+}
+
+main {
+  grid-area: main;
+  background-color: gainsboro;
+}
+
+.content-1 {
+  grid-area: content1;
+  background-color: gainsboro;
+}
+
+.content-2 {
+  grid-area: content2;
+  background-color: rosybrown;
+}
+.content-3 {
+  grid-area: content3;
+  background-color: rosybrown;
+}
+
+footer {
+  grid-area: footer;
+  background-color: slategray;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dc821cae01.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>The Tip <i class="fas fa-calculator"></i></h1>
+  </header>
+
+  <main class="conatain">
+
+    <div class="price-amount">
+      <form action="" id="maths">
+        <!-- <fieldset> -->
+      <label for="price">How much was your bill? <i class="fas fa-pizza-slice"></i></label>
+      <input  name="price" id="bill-amount">
+      <br>
+      <br>
+      <label for="the-tip">What you breaking off my boy?<br> (Use decimals here)<i class="fas fa-hand-holding-usd"></i></i></label>
+      <input id="tip-percentage">
+      <br>
+      <br>
+      <label for="tip-amount">This is your tip amount <i class="fas fa-percent"></i></label>
+      <input id="tip-amount">
+      <br>
+      <br>
+      <label for="total">This is your total!!! <i class="fas fa-wallet"></i></label>
+      <input id="total">
+      <br>
+      <br>
+        <button id="tipsy" type="submit">Calculate</button>
+        <!-- </fieldset> -->
+      </form>
+    </div>
+
+  </main>
+
+  <section>
+    <div class="list">
+      <h2>Amount Paid History</h2>
+      <ul id="unorder"></ul>
+    </div>
+  </section>
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,77 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* General styles */
+html {
+  font-size: 60.5%;
+  background: #710117;
+  font-family: "New Tegomin", serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+label {
+  font-size: 3rem;
+}
+
+button {
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-left: 250px;
+  padding: 5px;
+}
+
+button:hover {
+  color: #ecd5bb;
+  background-color: #710117;
+}
+/* Header styling */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  max-height: 20vh;
+}
+
+/* main styling */
+main {
+  background-color: #54627b;
+  margin-top: 10px;
+  max-width: 45vw;
+  padding: 5px;
+  height: 55vh;
+}
+
+input {
+  width: 100px;
+  margin-left: 5px;
+}
+
+/* section styling */
+section {
+  margin-left: 47vw;
+  max-width: 50vw;
+}
+
+.list {
+  background-color: #ecd5bb;
+  border-radius: 10px;
+  padding: 3px;
+  max-width: 170px;
+}
+
+ul {
+  font-size: 1.5rem;
+  list-style: square;
+}

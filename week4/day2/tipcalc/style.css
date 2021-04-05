@@ -34,6 +34,7 @@ button {
 
 button:hover {
   color: #ecd5bb;
+  background-color: #710117;
 }
 /* Header styling */
 header {
@@ -47,7 +48,7 @@ header {
 main {
   background-color: #54627b;
   margin-top: 10px;
-  max-width: 48vw;
+  max-width: 45vw;
   padding: 5px;
   height: 55vh;
 }
@@ -59,17 +60,18 @@ input {
 
 /* section styling */
 section {
-  margin-left: 50vw;
-  max-width: 45vw;
+  margin-left: 47vw;
+  max-width: 50vw;
 }
 
 .list {
   background-color: #ecd5bb;
+  border-radius: 10px;
   padding: 3px;
+  max-width: 170px;
 }
 
 ul {
   font-size: 1.5rem;
   list-style: square;
-  max-width: 100px;
 }

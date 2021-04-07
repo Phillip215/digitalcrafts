@@ -1,0 +1,93 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 60.5%;
+  font-family: "Dela Gothic One", cursive;
+  background-image: url(./assets/962341113958f0c141f5b40d45f0d7cb.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-right: 45px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  color: darkblue;
+  padding: 5px;
+}
+
+h1:hover {
+  color: orange;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  max-width: 23%;
+  height: 230px;
+  opacity: 0.85;
+  margin-left: 20px;
+  background-image: url(./assets/dandelion-in-wind-background-vector-2361692.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: antiquewhite;
+}
+
+h2:hover {
+  color: orange;
+}
+
+p {
+  font-size: 1.5rem;
+  color: antiquewhite;
+}
+
+p:hover {
+  color: orange;
+}
+
+#in {
+  margin-top: 20px;
+  margin-left: 20px;
+  background-image: url(./assets/dandelion-in-wind-background-vector-2361692.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  max-width: 21%;
+  height: 80px;
+  opacity: 0.85;
+}
+
+label {
+  font-size: 1.8rem;
+  color: antiquewhite;
+}
+
+label:hover {
+  color: orange;
+}
+
+button {
+  width: 55px;
+  height: 20px;
+  margin-top: 10px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>XML HTTP REQUEST</h1>
+</body>
+<script>
+  // console.log("Grabbing user info")
+  // console.log("Grabbing user address")
+  // // setTimeout(function, 3000)
+  // setTimeout(() => console.log("Writing in the letter body"), 4000)
+  // console.log("mail a letter to user")
+
+  // const request = new XMLHttpRequest()
+  // // console.log(request)
+  // request.onreadystatechange = function() {
+  //   console.log("console.log this",this)
+  //   const response = JSON.parse(this.responseText)
+  //   console.log(response.name)
+
+  //   const image = document.createElement("img")
+  //   image.src = response.sprites.front_default
+
+  //   const div = document.querySelector("root")
+  //   div.append(image)
+  //   console.log(response)
+  // }
+  // // open takes in two arguments, HTTP Method, is the URL or location of what you want to get
+  //   request.open("GET","https://pokeapi.co/api/v2/pokemon/1")
+  //   request.send()
+
+  // let pokemonData = {}
+
+  // const getPokemonData = ()=> {
+  //   const data = fetch("https://pokeapi.co/api/v2/pokemon/2")
+  //   .then(response => response.json())
+  //   .then(data => {
+  //   let name = document.createElement("h1")
+  //   name.innerHTML = data.name
+  //   let img = document.createElement("img")
+  //   let root = document.querySelector(".root")
+  //   img.src = data.sprites.front_default
+  //   root.append(img, name)
+    //   })
+    // }
+
+
+    const getPokemonData = async ()=> {
+      const data = await fetch("https://pokeapi.co/api/v2/pokemon/6")
+      const formattedJson = await data.json()
+      console.log(formattedJson)
+
+      let name = document.createElement("h1")
+      name.innerHTML = data.name
+      let img = document.createElement("img")
+      let root = document.querySelector(".root")
+      img.src = data.sprites.front_default
+      root.append(img, name)
+    }
+getPokemonData()
+
+</script>
+</html>

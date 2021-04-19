@@ -6,7 +6,6 @@ let user = document.querySelector("#user")
     const formattedJson = await info.json()
     let first = document.createElement("ul")
     let people = document.getElementById("people")
-    console.log(formattedJson.data[0].image)
     for(let i = 0; i < formattedJson.data.length;i++){
     let li = document.createElement("li")
 

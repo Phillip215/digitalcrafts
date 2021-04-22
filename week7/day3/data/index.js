@@ -17,6 +17,8 @@ app.get("/", (req, res) => {
 
 
 // CRUD
+
+// create todo
 app.post("/todo", async (req, res) => {
   try {
     const { description } = req.body;
@@ -27,20 +29,24 @@ app.post("/todo", async (req, res) => {
     );
     console.log(req.body);
   } catch (err){
-    console.log(err.messge);
+    console.error(err.message);
   }
 });
 
-// create todo
-
-
 // read the todolist
+app.get("/read_todos", async (req, res) => {
+  try{
+    const readTodosFromDB = await pool.query("SELECT * from todo");
+    res.json(readTodosFromDB);
+  } catch (err) {
+    console.error(err.message)
+  }
+});
 
     // read a specific todo
 app.get("/read_todos/:id", async (req, res) => {
   try {
     const { id } = req.params; // this looks at the url for whatever you put in :
-
     const readSingleTodoFromDB = await pool.query(
       "SELECT * from todo WHERE todo_id = ($1)",
       [id]
@@ -52,10 +58,32 @@ app.get("/read_todos/:id", async (req, res) => {
 });
 
 // update the todo item on todolist
+app.put("/update_todos/:id", async (req, res) => {
+  try{
+    const { id } = req.params;
+    const { description } = req.body;
 
+    const updateToDoInDB = await pool.query(
+      "UPDATE todo SET description = $1 WHERE todo_id = $2",
+      [description, id]
+    );
+  } catch (err) {
+    console.error(err.message)
+  }
+});
 
 // delete todolist
-
+app.delete("/delete_todo/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleteToDoInDB = await pool.query(
+      "DELETE FROM todo WHERE todo_id = $1",
+      [id]
+    )
+  } catch (err) {
+    console.error(err.message)
+  }
+});
 
 app.listen(port, () => {
   console.log(`your server is running on ${port}`);

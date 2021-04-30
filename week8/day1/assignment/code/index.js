@@ -43,5 +43,32 @@ app.get("/info/:id", async (req, res) => {
 });
 });
 
+app.put('/ups/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { thought } = req.body;
+
+    const updateThoughtsFromDb = await pool.query(
+      "UPDATE thoughts set thought = $1 WHERE thoughts_id = $2",
+      [thought, id]
+    );
+  } catch (err) {
+    console.error(err.message)
+  }
+});
+
+app.delete('/dels/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const removeThoughtsInDB = await pool.query(
+      "DELETE FROM thoughts WHERE thoughts_id = $1",
+      [id]
+    );
+  } catch (err) {
+    console.error(err.message)
+  }
+});
+
 app.listen(port, () => console.log(`running on port ${port}`)
 );

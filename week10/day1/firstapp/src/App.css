@@ -1,0 +1,91 @@
+body {
+  background-image: url(./components/dan-mall-ziehym_-Wms-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.nav h1 {
+  color: skyblue;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: slategray;
+  border: 2px solid black;
+  border-radius: 15px;
+  letter-spacing: 0.1em;
+  width: 5em;
+  height: 1.5em;
+  opacity: 0.8;
+  line-height: 1.5em;
+  position: relative;
+  overflow: hidden;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+nav ul li span {
+  color: skyblue;
+  mix-blend-mode: difference;
+}
+
+nav ul li::before {
+  content: "";
+  position: absolute;
+  width: 1.5em;
+  height: inherit;
+  background-color: black;
+  border-radius: 50%;
+  top: 0;
+  left: -0.75em;
+  transition: 0.5s ease-out;
+}
+
+nav ul li:hover::before {
+  transform: scale(7);
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: auto;
+  max-height: auto;
+  margin-bottom: 10px;
+}
+
+.back {
+  background-color: black;
+  opacity: 0.6;
+  width: 15em;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.back p {
+  opacity: 0;
+}
+
+.back p:hover {
+  transition: 3s;
+  opacity: 0.9;
+}
+
+.about {
+  font-size: medium;
+  color: skyblue;
+}

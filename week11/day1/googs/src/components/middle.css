@@ -1,0 +1,38 @@
+.tain {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 85px;
+  color: beige;
+}
+
+input {
+  height: 40px;
+  width: 480px;
+  font-size: 15px;
+  border-radius: 20px;
+  border-style: none;
+  padding-right: 30px;
+  padding-left: 35px;
+  color: beige;
+}
+
+input:hover {
+  background-color: darkred;
+}
+
+.glass {
+  position: absolute;
+  left: 510px;
+  top: 313px;
+  opacity: 0.5;
+}
+
+.mic {
+  position: absolute;
+  right: 515px;
+  top: 315px;
+  color: blue;
+}

@@ -1,0 +1,17 @@
+.bot {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 43vh;
+  margin-right: 3vw;
+}
+
+.cil {
+  font-size: 18px;
+  padding: 5px;
+  color: blue;
+}
+
+.cil:hover {
+  background-color: beige;
+  border-radius: 15px;
+}

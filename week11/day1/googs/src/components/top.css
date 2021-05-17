@@ -1,0 +1,17 @@
+.con {
+  display: flex;
+  justify-content: space-between;
+  width: 98vw;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+a {
+  font-size: 15px;
+  text-decoration: none;
+  color: beige;
+}

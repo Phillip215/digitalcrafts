@@ -54,7 +54,7 @@ export default class CardContainer extends Component {
 
     render() {
     const {pokemonData} = this.props
-    // const poke = pokemonData[0].pokemon
+
     const filteredData = pokemonData[0].pokemon.filter(pokemon => pokemon.name.includes(this.state.searchCriteria))
     return (
       <div className='space'>

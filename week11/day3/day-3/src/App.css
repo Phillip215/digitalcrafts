@@ -1,0 +1,27 @@
+body {
+  background-color: #add8e6;
+}
+
+.App {
+  max-width: 60%;
+  height: 70vh;
+  padding: 30px;
+  margin: auto;
+  border-radius: 20%;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.extra {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+}
+
+.button {
+  width: 20%;
+}

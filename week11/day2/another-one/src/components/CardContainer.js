@@ -42,8 +42,6 @@ export default class CardContainer extends Component {
       },
     };
     this.props.pokemonData[0].pokemon.unshift(create)
-    console.log(this.props.pokemonData[0].pokemon)
-
   }
 
     searchCriteria = (event) =>{

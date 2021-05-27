@@ -1,0 +1,1 @@
+export const INSERT_FAKE_GOAT = "INSERT_FAKE_GOAT";
